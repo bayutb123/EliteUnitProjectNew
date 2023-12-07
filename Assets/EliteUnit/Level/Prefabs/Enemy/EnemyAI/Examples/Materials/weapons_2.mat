@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Cube:
-        m_Texture: {fileID: 8900000, guid: d02d62a4e79e85b4c82ff2b073f1da74, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 1, y: 1}
     - _DecalTex:
@@ -96,3 +96,4 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectColor: {r: 0.26666668, g: 0.5137255, b: 0.5137255, a: 1}
     - _SpecColor: {r: 0, g: 0, b: 0.023529412, a: 0}
+  m_BuildTextureStacks: []
