@@ -42,7 +42,15 @@ TagManager:
   - Walls
   - Enemy
   - Bound
-  - 
+  - coverKanan
+  - coverKiri
+  - coverAtas
+  - Enemy
+  - MovingPlatform
+  - VisualEffect
+  - Overlay
+  - SubCharacter
+  - Character
   - 
   - 
   - 
