@@ -4,19 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - DeadZone
-  - VehicleArea
-  - Bullet
-  - Loop
-  - RagdollZone
-  - Grass
-  - Stone
-  - Tiles
-  - TriggerEnemyBase
-  - Wall
-  - posisiCover
-  - TriggerEnemyBase
-  - Emerald AI
   - Enemy
   layers:
   - Default
@@ -25,32 +12,32 @@ TagManager:
   - 
   - Water
   - UI
-  - Cover enemy
   - 
-  - Vehicle
+  - 
+  - Cover
+  - Ignore Shot
+  - Cover Invisible
   - Player
-  - Bullet
-  - Terrain
-  - VehicleMeshCollider
-  - VehicleWheel
-  - Weapon
-  - PlayerBones
-  - Walls
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - coverKanan
-  - coverKiri
-  - coverAtas
   - Enemy
-  - MovingPlatform
-  - VisualEffect
-  - Overlay
-  - SubCharacter
-  - Character
+  - Bound
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
