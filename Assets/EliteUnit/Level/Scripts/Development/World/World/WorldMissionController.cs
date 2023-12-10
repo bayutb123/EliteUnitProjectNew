@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 using Opsive.Shared.Events;
 using Opsive.UltimateCharacterController.Traits;
 
@@ -142,25 +143,27 @@ public class WorldMissionController : MonoBehaviour
     public void OnRespawn(Vector3 position, Quaternion rotation, bool transformChange)
     {
         CharacterRespawner characterRespawner = m_Character.GetComponent<CharacterRespawner>();
-        gameOverUI.gameObject.SetActive(false);
         characterRespawner.Respawn(position, rotation, transformChange);
-        isDeath = false;
+        
         resumeMission();
     }
 
 	public void pauseMission() 
 	{
-		// enable ui here
-
-		// pause game
 		Time.timeScale = 0;
 	}
 	
 	public void resumeMission()
 	{
-		// resume game
+        isDeath = false;
+        gameOverUI.gameObject.SetActive(false);
 	    Time.timeScale = 1;
-
-		// disable ui here
 	}
+    
+    public void GoToMainMenu()
+    {
+        Time.timeScale = 1;
+        gameOverUI.gameObject.SetActive(false);
+        SceneManager.LoadScene("MainMenu");
+    }
 }
