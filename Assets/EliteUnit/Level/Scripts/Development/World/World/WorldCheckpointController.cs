@@ -6,7 +6,7 @@ public class WorldCheckpointController : MonoBehaviour
 {
     [SerializeField] private GameObject _player;
     [SerializeField] private GameObject[] _checkpoints;
-    [SerializeField] private GameObject _playerSpawnPoint;
+    [SerializeField] public GameObject _playerSpawnPoint;
     
     private int _savedCheckpointIndex;
     private float _savedTimeLeft;

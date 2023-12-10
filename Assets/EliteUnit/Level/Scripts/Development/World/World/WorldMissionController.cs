@@ -20,6 +20,7 @@ public class WorldMissionController : MonoBehaviour
     private int deathPenalty = -1000;
     private int zeroPenalty = 0;
     private int pointsPerSecond = 100;
+    public bool isDeath = false;
 
     public TextMeshProUGUI timePointsText;
     public TextMeshProUGUI killPointsText;
@@ -133,17 +134,18 @@ public class WorldMissionController : MonoBehaviour
     public void gameOver()
     {
         gameOverUI.gameObject.SetActive(true);
+        isDeath = true;
         pauseMission();
         totalPointsDeath = CalculatePoints() - deathPenalty;
     }
 
     public void OnRespawn(Vector3 position, Quaternion rotation, bool transformChange)
     {
-        CharacterRespawner characterRespawner = GetComponent<CharacterRespawner>();
-
+        CharacterRespawner characterRespawner = m_Character.GetComponent<CharacterRespawner>();
         gameOverUI.gameObject.SetActive(false);
-
         characterRespawner.Respawn(position, rotation, transformChange);
+        isDeath = false;
+        resumeMission();
     }
 
 	public void pauseMission() 
@@ -160,6 +162,5 @@ public class WorldMissionController : MonoBehaviour
 	    Time.timeScale = 1;
 
 		// disable ui here
-
 	}
 }

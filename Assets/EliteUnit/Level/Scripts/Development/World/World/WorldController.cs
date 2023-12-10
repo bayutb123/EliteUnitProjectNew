@@ -18,6 +18,20 @@ public class WorldController : MonoBehaviour
         {
             TriggerMissionFailed();
         }
+        
+        if (_missionController.isDeath)
+        {
+            // If player press enter, respawn
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                _missionController.isDeath = false;
+                _missionController.OnRespawn(
+                    _checkpointController._playerSpawnPoint.transform.position,
+                    _checkpointController._playerSpawnPoint.transform.rotation,
+                    false
+                    );
+            }
+        }
 
     }
     
