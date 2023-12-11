@@ -98,9 +98,9 @@ public class WorldUIController : MonoBehaviour
             }
         }
 
-        resolutionDropdown.AddOptions(options);
-        resolutionDropdown.value = currentReso;
-        resolutionDropdown.RefreshShownValue();
+        // resolutionDropdown.AddOptions(options);
+        // resolutionDropdown.value = currentReso;
+        // resolutionDropdown.RefreshShownValue();
     }
     
     public void UpdateTimeLeft(float timeLeft)

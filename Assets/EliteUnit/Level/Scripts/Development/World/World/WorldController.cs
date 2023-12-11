@@ -31,6 +31,12 @@ public class WorldController : MonoBehaviour
                     false
                     );
             }
+            
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                _missionController.isDeath = false;
+                _missionController.GoToMainMenu();
+            }
         }
 
     }
