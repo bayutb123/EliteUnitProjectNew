@@ -2798,7 +2798,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &179699378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6597,7 +6597,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &416121135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13848,6 +13848,7 @@ MonoBehaviour:
   timeLeft: 600
   initialTimeLeft: 600
   totalPoints: 0
+  isDeath: 0
   timePointsText: {fileID: 1351828218}
   killPointsText: {fileID: 1042601893}
   totalPointsText: {fileID: 830665376}
